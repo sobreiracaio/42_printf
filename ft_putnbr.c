@@ -37,14 +37,14 @@ unsigned int	n_lenght(int n)
 	return (len);
 }
 
-int ft_putnbr(int nb)
+int	ft_putnbr(int nb)
 {
-    int len;
-    char *number;
-    len = n_lenght(nb);
-    number = ft_itoa(nb);
-    write(1, number, len);
-    free(number);
-    return (len);
-    
+	int		len;
+	char	*number;
+
+	len = n_lenght(nb);
+	number = ft_itoa(nb);
+	write(1, number, len);
+	free(number);
+	return (len);
 }

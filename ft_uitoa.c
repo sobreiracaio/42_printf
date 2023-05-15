@@ -41,7 +41,7 @@ char	*ft_uitoa(unsigned int n)
 {
 	char			*result;
 	unsigned int	length;
-	unsigned int		nb;
+	unsigned int	nb;
 
 	nb = n;
 	length = ulenght(nb);
@@ -49,14 +49,12 @@ char	*ft_uitoa(unsigned int n)
 	if (!result)
 		return (NULL);
 	result[length] = '\0';
-    if (nb == 0)
+	if (nb == 0)
 		result[0] = '0';
 	while (nb)
 	{
-       	result[--length] = '0' + (nb % 10);
+		result[--length] = '0' + (nb % 10);
 		nb /= 10;
 	}
 	return (result);
 }
-
-

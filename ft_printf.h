@@ -18,13 +18,13 @@
 # include <limits.h>
 # include "libft/libft.h"
 
-int ft_printf(const char *format, ...);
-int ft_putchar(char c);        //Put char
-int ft_putstr(char *str);      //Put string
-int ft_putptr(unsigned long ptr);      //Put pointer
-int	ft_putnbr(int n);          //Put decimals
-int ft_putunbr(unsigned int nb); //Put unsigned int
+int		ft_printf(const char *format, ...);
+int		ft_putchar(char c);
+int		ft_putstr(char *str);
+int		ft_putptr(unsigned long ptr);
+int		ft_putnbr(int n);
+int		ft_putunbr(unsigned int nb);
 char	*ft_uitoa(unsigned int n);
-int ft_puthex(unsigned int n, char format);
+int		ft_puthex(unsigned int n, char format);
 
 #endif
