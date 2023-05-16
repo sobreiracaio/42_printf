@@ -6,7 +6,7 @@
 /*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 19:07:45 by admin             #+#    #+#             */
-/*   Updated: 2023/05/12 21:46:31 by admin            ###   ########.fr       */
+/*   Updated: 2023/05/16 17:28:08 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,14 @@ unsigned int	lenght(unsigned int n)
 	return (len);
 }
 
-int ft_putunbr(unsigned int nb)
+int	ft_putunbr(unsigned int nb)
 {
-    int len;
-    char *number;
-    len = lenght(nb);
-    number = ft_uitoa(nb);
-    write(1, number, len);
-    free(number);
-    return (len);
-    
+	int		len;
+	char	*number;
+
+	len = lenght(nb);
+	number = ft_uitoa(nb);
+	write(1, number, len);
+	free(number);
+	return (len);
 }

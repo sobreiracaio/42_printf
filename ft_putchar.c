@@ -6,14 +6,14 @@
 /*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:33:11 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/05/14 00:03:00 by admin            ###   ########.fr       */
+/*   Updated: 2023/05/16 17:24:14 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putchar(char c)
+int	ft_putchar(char c)
 {
-	write (1, &c, 1);
+	write(1, &c, 1);
 	return (1);
 }
